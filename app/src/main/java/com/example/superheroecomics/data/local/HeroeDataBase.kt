@@ -32,6 +32,3 @@ abstract class HeroeDataBase : RoomDatabase() {
         }
     }
 }
-
-
-}
