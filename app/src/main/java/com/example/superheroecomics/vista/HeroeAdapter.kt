@@ -26,9 +26,9 @@ class HeroeAdapter : RecyclerView.Adapter<HeroeAdapter.ItemHeroeViewHolder>() {
         holder.bind(phone)
     }
 
-    fun setData(phones: List<HeroeEntity>) {
+    fun setData(heroes: List<HeroeEntity>) {
         this.listItemHeroes.clear()
-        this.listItemHeroes.addAll(phones)
+        this.listItemHeroes.addAll(heroes)
         notifyDataSetChanged()
 
     }
