@@ -9,4 +9,4 @@ fun HeroeData.transformToEntity(): HeroeEntity =
     HeroeEntity(this.id, this.nombre, this.origen, this.imagenLink, this.poder, this.Año_creacion)
 
 fun HeroeDataDetails.transformToDetailEntity(): HeroeDetailsEntity =
-    HeroeDetailsEntity(this.id, this.nombre, this.origen, this.imagenLink, this.poder, this.Año_creacion, this.poder, this.traduccion)
+    HeroeDetailsEntity(this.id, this.nombre, this.origen, this.imagenLink, this.poder, this.año_creacion, this.poder, this.traduccion)

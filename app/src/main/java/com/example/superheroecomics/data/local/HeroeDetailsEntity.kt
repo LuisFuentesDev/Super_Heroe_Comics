@@ -10,7 +10,7 @@ data class HeroeDetailsEntity(
     val origen: String,
     val imagenLink: String,
     val poder: String,
-    val Año_creacion: Int,
+    val año_creacion: Int,
     val color: String,
     val traduccion: Boolean
 )

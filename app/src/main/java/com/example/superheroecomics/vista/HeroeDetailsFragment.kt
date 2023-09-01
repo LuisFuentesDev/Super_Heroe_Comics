@@ -39,12 +39,12 @@ class HeroeDetailsFragment : Fragment() {
             if (it != null) {
                 binding.imageViewDetails.load(it.imagenLink)
                 binding.textViewNameDetails.text = it.nombre
-                binding.textViewAgeDetails.text = it.Año_creacion.toString()
+                binding.textViewAgeDetails.text = it.año_creacion.toString()
 
                 if (!it.traduccion) {
-                    binding.textViewTraduccion.text = "Cuenta con traducción al español"
-                } else {
                     binding.textViewTraduccion.text = "Sin traducción"
+                } else {
+                    binding.textViewTraduccion.text = "Cuenta con traducción al español"
 
                     initListeners()
                 }
