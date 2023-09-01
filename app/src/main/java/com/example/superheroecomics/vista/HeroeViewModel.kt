@@ -13,6 +13,8 @@ class HeroeViewModel(application: Application) : AndroidViewModel(application) {
 
     fun heroeLiveData() = repository.getHeroeEntity()
 
+    fun heroeDetailsLiveData(id: Int) = repository.getHeroeDetailsEntity(id)
+
     init {
         val heroeApi = HeroeRetrofit.getHeroeRetrofit()
         val heroeDataBase = HeroeDataBase.getDataBase(application).getHeroeDao()
@@ -23,5 +25,8 @@ class HeroeViewModel(application: Application) : AndroidViewModel(application) {
     fun getAllHeroes() = viewModelScope.launch {
         repository.getHeroes()
 
+    }
+    fun getDetailsHero(id: Int) = viewModelScope.launch {
+        repository.getHeroeDetails(id)
     }
 }
