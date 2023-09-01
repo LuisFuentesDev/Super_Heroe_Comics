@@ -10,7 +10,7 @@ class Repository(private val heroeApi: HeroeApi, private val heroeDao: HeroeDao)
 
     fun getHeroeEntity(): LiveData<List<HeroeEntity>> = heroeDao.getHeroe()
 
-    suspend fun getPhones() {
+    suspend fun getHeroes() {
         try {
             val response = heroeApi.getData()
             if (response.isSuccessful) {
