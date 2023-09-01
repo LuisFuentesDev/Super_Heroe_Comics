@@ -23,7 +23,7 @@ class Repository(private val heroeApi: HeroeApi, private val heroeDao: HeroeDao)
                 Log.e("Repository", response.errorBody().toString())
             }
         } catch (e: Exception) {
-            Log.e("Repository", "Error getting phones: ${e.message}")
+            Log.e("Repository", "Error getting heroes: ${e.message}")
         }
     }
 }

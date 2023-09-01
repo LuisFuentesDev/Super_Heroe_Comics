@@ -1,9 +1,12 @@
 package com.example.superheroecomics.vista
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.superheroecomics.R
 import com.example.superheroecomics.data.local.HeroeEntity
 import com.example.superheroecomics.databinding.ItemHeroeBinding
 
@@ -40,6 +43,12 @@ class HeroeAdapter : RecyclerView.Adapter<HeroeAdapter.ItemHeroeViewHolder>() {
             heroeVista.imageViewHeroe.load(heroe.imagenLink)
             heroeVista.textViewName.text = heroe.nombre
             heroeVista.textViewAO.text = heroe.Año_creacion.toString()
+
+           /* heroeVista.cardViewImage.setOnClickListener {
+                val bundle = Bundle()
+                bundle.putInt("id", heroe.id)
+                Navigation.findNavController(heroeVista.root)
+                    .navigate(R.id.action_phoneList_to_phoneDetails, bundle)*/
         }
     }
 }

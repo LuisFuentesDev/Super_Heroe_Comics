@@ -5,7 +5,7 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface HeroeApi {
-    @GET("/superheroes")
+    @GET("superheroes")
     suspend fun getData(): Response<List<HeroeData>>
 
 }
