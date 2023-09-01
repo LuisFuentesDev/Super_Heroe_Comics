@@ -42,13 +42,14 @@ class HeroeAdapter : RecyclerView.Adapter<HeroeAdapter.ItemHeroeViewHolder>() {
         fun bind(heroe: HeroeEntity) {
             heroeVista.imageViewHeroe.load(heroe.imagenLink)
             heroeVista.textViewName.text = heroe.nombre
-            heroeVista.textViewAO.text = heroe.Año_creacion.toString()
+            heroeVista.textViewAge.text = heroe.Año_creacion.toString()
 
-           /* heroeVista.cardViewImage.setOnClickListener {
+            heroeVista.cardViewImage.setOnClickListener {
                 val bundle = Bundle()
                 bundle.putInt("id", heroe.id)
                 Navigation.findNavController(heroeVista.root)
-                    .navigate(R.id.action_phoneList_to_phoneDetails, bundle)*/
+                    .navigate(R.id.action_heroeListFragment_to_heroeDetailsFragment, bundle)
+            }
         }
     }
 }

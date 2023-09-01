@@ -8,5 +8,5 @@ data class HeroeDataDetails(
     val poder: String,
     val Año_creacion: Int,
     val color: String,
-    val traduccion: String
+    val traduccion: Boolean
 )
