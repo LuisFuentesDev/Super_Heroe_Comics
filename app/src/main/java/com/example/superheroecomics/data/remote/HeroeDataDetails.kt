@@ -1,6 +1,6 @@
 package com.example.superheroecomics.data.remote
 
-data class HeroeDetails(
+data class HeroeDataDetails(
     val id: Int,
     val nombre: String,
     val origen: String,
